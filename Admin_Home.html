@@ -6,22 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif; height:70%;}
 form {border: 3px solid #f1f1f1;
  width: 50%;
- 
+ height:70%;
  margin-left: 25%;
  margin-top: 5%;
 }
 
-input[type=text], input[type=password], input[type=file] {
+input[type=text], input[type=password], input[type=textarea], input[type=date] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  background-color: #009933;
 }
+textarea {
+background-color: #4CAF50;
+}
+
 
 button {
   background-color: #4CAF50;
@@ -38,10 +43,23 @@ button:hover {
 }
 
 .cancelbtn {
-  width: auto;
+  width: 20%;
   padding: 10px 18px;
-  background-color: #f44336;
+  
 }
+
+.cancelbtnq {
+  width: 25%;
+  padding: 10px 18px;
+  
+}
+.cancelbtnw{
+  width: 70%;
+  padding: 10px 18px;
+  
+}
+
+
 
 .imgcontainer {
   text-align: center;
@@ -54,8 +72,29 @@ img.avatar {
 }
 
 .container {
+Height: 100%;
   padding: 16px;
 }
+
+.split {
+ 
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+width: 30%;
+  left: 0;
+  
+}
+
+.right {
+width: 70%;
+  right: 0;
+}
+
 
 span.psw {
   float: right;
@@ -115,6 +154,7 @@ p {
   background-color: #8DBA73;
 }
 
+
 .footer {
    position: fixed;
    left: 0;
@@ -165,6 +205,13 @@ p {
   color: white;
 }
 
+a:link {
+  color: Black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 
 </style>
 </head>
@@ -174,7 +221,7 @@ p {
   <li><a href="Nav.html">Home</a></li>
   <li><a href="Employement.html">EMPLOYEMENT</a></li>
   <li><a href="contact.html">CONTACT</a></li>
-  <li><a href="Login_Admin.html">LOGIN ADMIN</a></li>
+  <li><a href="Logout.html">LOGOUT ADMIN</a></li>
   <li><a href="Login_User.html">LOGIN USER</a></li>
 </ul>
 
@@ -184,9 +231,21 @@ p {
  
  <body>
 
-<h2> You have sucessfuly Logged out<h2>
-    
-  </div>
+<h1 align="middle">ADMIN HOME</h1>
+
+<form>
+  
+
+  <div class="container">
+   <button type="submit"><a href="Manage_User.html"> MANAGE USERS</a> </button><br>
+    <button type="button"><a href="Job_Post.html">POST JOBS </button><br>
+	<button type="button"><a href="Manage_Jobs.html">VIEW/EDIT JOBS</button><br>
+	<img src="Cat.JPG" class="cancelbtn">
+	<textarea type="textarea"  rows="16" cols="60"> You can now apply online by clicking on the job title you are interested in and clicking on the "Apply" link! If this is the first time you are applying using our online job application, you will need to create an account and select a Username and Password. After your account has been established, you can build an application by clicking on the "Build Job Application" link. This application can be saved and used to apply for more than one job opening.You can now apply online by clicking on the job title you are interested in and clicking on the "Apply" link! If this is the first time you are applying using our online job application, you will need to create an account and select a Username and Password. After your account has been established, you can build an application by clicking on the "Build Job Application" link. 
+</textarea>>
+
+	</div>
+	
 </form>
 
 </body>
